@@ -6,4 +6,4 @@ WORKDIR /app
 COPY requirements.pip /app/
 RUN pip install -r requirements.pip
 COPY . /app/
-CMD python manage.py collectstatic --no-input;python manage.py migrate
+CMD python TelegramBot/manage.py collectstatic --no-input;python manage.py migrate
